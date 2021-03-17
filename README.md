@@ -6,7 +6,7 @@ API JSON RESTful in Ruby that contains all methods (GET,POST,PUT,DELETE)
 **Create sql Database : **:
 
 ```console
-Database Name : `shipsmart`
+Database Name : shipsmart
 ```
 **Install all gems**
 
