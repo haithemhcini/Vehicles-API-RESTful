@@ -23,3 +23,12 @@ $ rails db:migrate
 ```console
 $ rails server
 ```
+## Usage
+
+| HTTP verbs | Paths  | Used for |
+| ---------- | ------ | --------:|
+| GET | /vehicles|List all vehicles|
+| GET | /vehicles/:id | Show a single vehicle |
+| POST | /vehicles| Add new vehicle|
+| PUT | /vehicles/:id |  Update a vehicle |
+| DELETE | /vehicles/:id | Delete a vehicle|
