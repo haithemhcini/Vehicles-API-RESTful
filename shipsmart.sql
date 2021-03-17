@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 17 mars 2021 à 20:33
+-- Généré le :  mer. 17 mars 2021 à 22:32
 -- Version du serveur :  5.7.19
 -- Version de PHP :  5.6.31
 
@@ -21,6 +21,47 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `shipsmart`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `ar_internal_metadata`
+--
+
+DROP TABLE IF EXISTS `ar_internal_metadata`;
+CREATE TABLE IF NOT EXISTS `ar_internal_metadata` (
+  `key` varchar(255) NOT NULL,
+  `value` varchar(255) DEFAULT NULL,
+  `created_at` datetime(6) NOT NULL,
+  `updated_at` datetime(6) NOT NULL,
+  PRIMARY KEY (`key`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `ar_internal_metadata`
+--
+
+INSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES
+('environment', 'development', '2021-03-17 17:38:24.003905', '2021-03-17 17:38:24.003905');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `schema_migrations`
+--
+
+DROP TABLE IF EXISTS `schema_migrations`;
+CREATE TABLE IF NOT EXISTS `schema_migrations` (
+  `version` varchar(255) NOT NULL,
+  PRIMARY KEY (`version`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `schema_migrations`
+--
+
+INSERT INTO `schema_migrations` (`version`) VALUES
+('20210317173357');
 
 -- --------------------------------------------------------
 
